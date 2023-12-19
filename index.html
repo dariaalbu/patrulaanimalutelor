@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Daria Albu">
+  <meta name="keywords" content="ONG, Animale, Patrula Animăluțelor">
+  <meta name="description"
+    content="Patrula Animăluțelor este un ONG dedicat animalelor care nu au un adăpost. Scopul nostru este de a le oferi cea mai bună viață pe care au avut-o până acum.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrula Animăluțelor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<style>
+  body {
+    font-family: 'Merriweather', serif;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1F2784;
+    padding: 15px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  nav li {
+    margin: 10px;
+  }
+
+  nav li a {
+    display: block;
+    padding: 20px;
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 55px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+    text-align: center;
+    color: #1F2784;
+    padding: 10px;
+  }
+
+  footer {
+    background-color: #1F2784;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .cerc {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    justify-self: center;
+  }
+
+  .fundal {
+    background-color: #CDCCDB;
+  }
+
+  .culoare {
+    color: aliceblue;
+  }
+</style>
+
+<body class="fundal">
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <div class="navbar">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img class="logo" src="logo.png" alt="Logo cu o lăbuță de animăluț și un câine în interior"
+                class="d-inline-block align-text">
+              <p class="text-white">Patrula Animăluțelor</p>
+            </a>
+          </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="navbar">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active, culoare" aria-current="page" href="#acasa">Acasă</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active, culoare" href="#testimoniale">Testimoniale</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active, culoare" href="#echipa">Echipa noastră</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active, culoare" href="#adoptie">Adopție</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active, culoare" href="#prieteni">Prietenii pufoși</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h1>Patrula Animăluțelor</h1>
+          <img src="principala.jpg" class="d-block w-100"
+            alt="un câine care are un guler în jurul gâtului, care stă întins pe asfalt">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Seriozitate</h5>
+            <p>Cele mai simpatice și jucăușe animăluțe.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="fericire.jpg" class="d-block w-100"
+            alt="o fată care zâmbește și încă o femeie care stă pe jumătate într-o parte">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Distracție</h5>
+            <p>Cele mai minunate zâmbete.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="volunt.jpg" class="d-block w-100"
+            alt="patru persoane îmbrăcate în tricouri de voluntari, cu semne deasupra capului">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Activități</h5>
+            <p>Activități pline de distrcție și voie bună.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="doctor.jpg" class="d-block w-100" alt="o sală de operații, specială pentru animăluțe">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Îngrijire</h5>
+            <p>Avem cea mai mare grijă de prietenii pufoși.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="voluntari.jpg" class="d-block w-100"
+            alt="patru persoane care au tricouri de voluntari, se țin de după umăr și zâmbesc">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Voluntari</h5>
+            <p>Avem cei mai săritori voluntari.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+
+  <div id="acasa">
+    <h2>Povestea primului animăluț adoptat</h2>
+    <div class="container px-4 text-center">
+      <div class="row gx-5">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div><img class="cerc" src="primul.jpg" alt="un câine cu limba scoasă, care stă pe o cutie albă"> </div>
+        </div>
+        <div class="col">
+          <div>
+            <p>Sasha este cea care a început toată această poveste. Acum 10 ani, în 2013, câțiva prieteni mergeau în
+              vacanță, când în mijlocul drumului a apărut Sasha. Era murdară, slăbită, însetată, iar privirea sa nu le-a
+              permis
+              acestora să o ocolească. În acel moment, Cleopatra, una dintre fete, a deschis portiera pentru a-i oferi
+              puțină mâncare.
+              Surpriza a fost că Sasha a urcat în brațele acesteia, înainte să poată coborî din mașină. În acel moment
+              s-a creat o
+              legătură între noi, iar cățelușa a devenit parte din grup. Din păcate, pe drum au apărut multe cazuri de
+              acest fel,
+              iar din dorința de a rări astfel de evenimente, grupul a devenit o echipă, creatorii ONG-ului „Patrula
+              Animăluțelor”.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="testimoniale">
+      <h2>Testimoniale</h2>
+      <div class="container px-4 text-center">
+        <div class="row gx-5">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="p-3 border bg-light"> <img src="angela.jpg" class="img-thumbnail"
+                alt="doi oameni în vârstă care se țin brațe">
+              <p>Angela și Martin</p>
+              <p>„Am fost plăcut surprinși de experiența pe care am avut-o la Patrula Animăluțelor. Voluntarii sunt
+                foarte respectuoși și au stat la dispoziția noastră cu răspunsuri la multitudinea de întrebări pe care
+                am
+                avut-o. Cât despre animăluțe, am fi vrut să le luăm pe toate. Se vede că sunt într-o condiție foarte
+                bună și că sunt
+                pregătiți să facă parte dintr-o familie.”</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="p-3 border bg-light"><img src="alex.jpg" class="img-thumbnail"
+                alt="un bărbat la costum, care stăcu mâinile încrucișate">
+              <p>Alex</p>
+              <p>„Mereu mi-am dorit să am curtea plină de căței și pisici. Din păcate, stau la bloc, așa că momentan nu
+                am posibilitatea de a avea fizic un animal. Am ales varianta de a adopta la distanță. Pot să îmi scot
+                cățelul la plimbare de câte ori vreau și are parte de hrană și iubire în permanență. Voluntarii sunt
+                foarte
+                deschiși, iar atmosfera este una foarte călduroasă și primitoare.”</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="p-3 border bg-light"><img src="antonia.jpg" class="img-thumbnail"
+                alt="o femeie îmbrăcată cu o rochie mov și un fular, care stă cu un dosar">
+              <p>Antonia</p>
+              <p>„Îmi doresc să îmi petrec tot timpul în cadrul acestui sediu. Oamenii sunt foarte prietenoși și
+                politicoși, animăluțele îți oferă cea mai bună stare, iar locul este unul foarte primitiv. Am adoptat
+                deja trei animăluțe fizic și două de la distanță, și nu regret deloc. Dacă aș mai avea loc, aș continua
+                cu
+                adopția. Atât eu, cât și toată familia mea, iubim animalele din tot sufletul.” </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="echipa">
+        <h2>Echipă</h2>
+        <div class="container px-4 text-center">
+          <div class="row gx-5">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="p-3 border bg-light"><img src="cleopatra.jpg" class="img-thumbnail"
+                  alt="o fată îmbrăcată gros, care scoate limba">
+                <p>Cleopatra</p>
+                <p>„Eu sunt Cleopatra, fondatoarea ONG-ului, o iubitoare de animăluțe, stăpână a 3 căței și 2 pisici, ce
+                  își petrece majoritatea timpului la sediu, asigurându-se că fiecărui animăluț nu îi lipsește nimic.
+                  Încă de mic
+                  copil am iubit animalele și am fost înconjurată de ele. Tristețea mea era imensă în momentele în care
+                  mergeam pe
+                  stradă și vedeam animăluțe care nu aveau ce mânca sau un loc în care să doarmă.”</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="p-3 border bg-light"> <img src="adelina.jpg" class="img-thumbnail"
+                  alt="o femeie cu păr blond, care zâmbește">
+                <p>Adelina</p>
+                <p>„M-am alăturat echipei acum 7 ani. Stăteam în brațe cu 3 pui de pisică când acești oameni au venit cu
+                  zâmbetul
+                  pe
+                  buze în întâmpinarea lor. Nu mi-a mai venit să plec, și nu am mai făcut-o. Din acel moment am fost cea
+                  mai
+                  fericită,
+                  știind că zilnic ajut animăluțele să aibă cea mai bună condiție și să se simtă iubite. Iubesc să le
+                  vorbesc
+                  toată
+                  ziua, să le hrănesc și să mă joc cu ele, de parcă mi-ar fi cei mai buni prieteni. De fapt, ei asta
+                  sunt.”</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="p-3 border bg-light"><img src="marcus.jpg" class="img-thumbnail"
+                  alt="un bărbat la cămașă, cu mâinile încrucișate și cu ochelari">
+                <p>Marcus</p>
+                <p>„Eu sunt Marcus, și de când mă știu, prietenul meu cel mai bun a fost câinele meu, Toto. După ce
+                  acesta nu a
+                  mai
+                  fost printre noi, îmi petreceam zilele jucându-mă cu orice animal vedeam în cale. Eram de față când am
+                  salvat-o
+                  pe
+                  Sasha, prima noastră cățelușă. Când am privit-o în ochi, l-am văzut pe Toto. Am știut că asta este ce
+                  ar trebui
+                  să
+                  facem și ceea ce ne face cu adevărat fericiți. Am devenit cu adevărat cu toții o familie.”</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="p-3 border bg-light"><img src="codrin.jpg" class="img-thumbnail" alt="un băiat cu ochelari">
+                <p>Codrin</p>
+                <p>„Cum ar fi viața fără prietenii noștri pufoși? Credeți că ar fi bună? Chiar deloc. Animăluțele sunt
+                  cele mai
+                  fidele
+                  ființe de pe această planetă, iar acestea ar trebui prețuite. M-am alăturat echipei acum 5 ani, din
+                  pură iubire
+                  și
+                  dorință de a ajuta și a-mi oferi timpul pentru creșterea și pregătirea acestora pentru o viață și mai
+                  bună. Îmi
+                  doresc doar să iau toate animalele
+                  la mine acasă și să pot sta mereu cu ele. Cred că asta a fost menirea mea.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="adoptie">
+          <h2>Adoptă de la distanță</h2>
+          <p>Adopția se poate realiza atât fizic, cât și de la distanță. Ce înseamnă adopția la distanță? Aceasta
+            presupune
+            susținerea financiară a unuia sau a mai multora animăluțe prin achitarea unei sume ce contribuie la:</p>
+          <ul>
+            <li>achiziționarea hranei</li>
+            <li>achitarea medicamentelor</li>
+            <li>vaccinuri </li>
+            <li>jucării</li>
+            <li>vizite la veterinar</li>
+          </ul>
+          <p>Bineînțeles, îți poți scoate animăluțul la plimbare de câte ori îți dorești. Ceea ce rămâne în plus poate
+            ajuta
+            și
+            la susținerea celorlalți pufoși. Această contribuție se poate opri în orice moment. Tot ce trebuie să faci
+            este
+            să îți alegi animăluțul și să completezi o cerere online sau la sediul nostru.</p>
+        </div>
+
+        <div class="container px-4 text-center">
+          <div class="row gx-5">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card">
+                <img src="donatie.jpg" class="card-img-top" alt="baloane sub forma literelor D și O">
+                <div class="card-body">
+                  <h5 class="card-title">Donație lunară</h5>
+                  <p class="card-text">Devino eroul lor în fiecare lună! Cu fiecare contribuție lunară, oferiți șansa la
+                    o viață mai bună pentru cei fără voce. Împreună putem face o diferență semnificativă în viața
+                    animalelor vulnerabile. </p>
+                  <a href="https://ro.pinterest.com/" target="_blank" class="btn btn-dark">10€/ lună</a>
+                  <span class="badge text-bg-secondary">ATRACTIV</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card">
+                <img src="donație2.jpg" class="card-img-top" alt="baloane sub forma literelor N și A">
+                <div class="card-body">
+                  <h5 class="card-title">Donație intermediară</h5>
+                  <p class="card-text">Angajează-te pentru binele animalelor timp de 6 luni! Prin abonarea la o donație
+                    pe termen lung, oferi sprijin constant pentru ONG-ul nostru dedicat protejării și îngrijirii
+                    animalelor. </p>
+                  <a href="https://ro.pinterest.com/" target="_blank" class="btn btn-dark">50€/ 6 luni</a>
+                  <span class="badge text-bg-info">NOU</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card">
+                <img src="donatie3.jpg" class="card-img-top" alt="baloane sub forma literelor T și E">
+                <div class="card-body">
+                  <h5 class="card-title">Donație anuală</h5>
+                  <p class="card-text">Investește în binele animalelor pentru un an întreg! Cu donația ta anuală,
+                    contribui la schimbări durabile și aduci bucurie în viețile animalelor neajutorate, iar ele sigur îți vor
+                    zâmbi!" </p>
+                  <a href="https://ro.pinterest.com/" target="_blank" class="btn btn-dark">90€/ an</a>
+                  <span class="badge text-bg-success">AVANTAJOS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Cum poți ajuta ONG-ul?</h3>
+        <p>În cazul în care nu poți adopta un animăluț la distanță, dar vrei totuși să ajuți ONG-ul nostru, poți veni ca
+          și voluntar. Apreciem mult oamenii care sunt dornici să ne ajute și să petreacă timp alături de animăluțe. Ca
+          și
+          voluntar, poți veni să hrănești animalele, să stai cu ele în orele de joacă, să faci curat după ele sau pur și
+          simplu să te ocupi de prietenii pufoși ce urmează să se alăture comunității.</p>
+
+        <div id="prieteni">
+          <h2>Prietenii pufoși</h2>
+          <h3>Pe cine poți întâlni?</h3>
+
+          <div class="container px-4 text-center">
+            <div class="row gx-5">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="p-3 border bg-light"><img src="linda.jpg" class="img-thumbnail"
+                    alt="câine cu un prosop roz pe cap, aflat pe un fotoliu">
+                  <p>Linda</p>
+                  <p>Linda este născută pe 29 martie 2020, este foarte prietenoasă, de talie mică, și o femelă jucăușă
+                    și energică.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="p-3 border bg-light"><img src="ada.jpg" class="img-thumbnail"
+                    alt="câine îmbrăcat cu o bluză cu banane, care scoate limba">
+                  <p>Ada</p>
+                  <p>Ada este născută pe 14 aprilie 2018, este de talie mică și este o fire de care te vei îndrăgosti la
+                    prima
+                    joacă.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="p-3 border bg-light"><img src="nodi.jpg" class="img-thumbnail"
+                    alt="pisică  făcând cu mâna, fiind ținută în brațele unui om">
+                  <p>Nodi</p>
+                  <p>Nodi este un pisoiaș alintat, născut pe 7 noiembrie 2022, care așteaptă să
+                    se joace cu viitorul său prieten.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="p-3 border bg-light"><img src="max.jpg" class="img-thumbnail"
+                    alt="câine îmbrăcat cu o bluză verde și cu un lanț de aur, ce stă cu spatele la cameră">
+                  <p>Max</p>
+                  <p>Max este născut pe 19 iulie 2021, adoră mingile și pisoii, este de talie mică și este foarte
+                    drăgăstos.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="p-3 border bg-light"><img src="uzi.jpg" class="img-thumbnail"
+                    alt="câine ud care stă la uscat cu prosopul">
+                  <p>Uzi</p>
+                  <p>Uzi este cel mai jucăuș cățel pe care îl vei cunoaște. Este născut pe 18 martie 2022 și nu vei
+                    putea fi trist lângă el.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="p-3 border bg-light"><img src="cody.jpg" class="img-thumbnail"
+                    alt="un câine supărat care are o căciulă galbenă pe cap">
+                  <p>Cody</p>
+                  <p>Cody este născut pe 30 octombrie 2022 și nu ai cum să îi mai dai drumul din brațe după ce te
+                    privește în ochi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer>
+            <div class="container-sm, container-md, container-lg">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.89542910652!2d-3.67953665!3d40.4379543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spania!5e0!3m2!1sro!2sro!4v1702565151053!5m2!1sro!2sro"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="insta.png"
+                        alt="logo-ul de la aplicația Instagram"></a>
+                    <a href="http://www.facebook.com" target="_blank"><img src="facebook.png"
+                        alt="logo-ul de la aplicația Facebook"></a>
+                    <p>Copyright © 2023 Patrula Animăluțelor</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div>
+                    <p>E-mail:<a href="mailto:patrula.animalutelorxxx@gmail.com"
+                        class="culoare">patrula.animalutelor@gmail.com</a> <br>
+                      <a href="mailto:patrulaanimalutelorsx.xxx.x@yahoo.ro"
+                        class="culoare">patrulaanimalutelorsx.xxx.x@yahoo.ro</a>
+                    </p>
+                    <p>Telefon:</p>
+                    <p>07xx xxx xxx</p>
+                    <p>07yy xxz xxx</p>
+                    <p>Sediu: Calea xxx, Nr. x</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
